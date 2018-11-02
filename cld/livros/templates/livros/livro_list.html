@@ -1,0 +1,13 @@
+{% extends 'livros/base.html' %}
+
+{% block content %}
+
+{% for livro in livros %}
+    <div>
+        <h2><a href="{% url 'livro_detail' pk=livro.pk %}">{{ livro.titulo }}</a></h2>
+        <p>Código: {{ livro.codigo }}</p>
+        <p>Autor(es): {{ livro.autor|linebreaksbr }}</p>
+    </div>
+{% endfor %}
+
+{% endblock %}
