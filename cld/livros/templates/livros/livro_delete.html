@@ -1,0 +1,10 @@
+{% extends 'livros/base.html' %}
+
+{% block content %}
+    <h1>Deletar livro</h1>
+    <form method="POST" class="post-form">{% csrf_token %}
+        Você tem certeza que deseja excluir esse livro? 
+        <p>Título: <strong>{{livro.titulo}}</strong></p>
+        <button type="submit" class="save btn btn-default">Confirma Exclusão!</button>
+    </form>
+{% endblock %}

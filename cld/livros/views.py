@@ -42,6 +42,18 @@ def livro_edit(request, pk):
      else:
          form = LivroForm(instance=livro)
      return render(request, 'livros/livro_edit.html', {'form': form})
-    
 
+def livro_delete(request, pk): 
+	livro = get_object_or_404(Livro, pk=pk)
+	if request.method == "POST":
+		livro.delete()
+		return redirect('livro_list')
+	else:
+		form = LivroForm(instance=livro)
+	return render(request, 'livros/livro_delete.html', {'livro': livro})
+    
+#def livro_delete(request, pk):
+#    livro = get_object_or_404(Livro, pk=pk) #Livro.objects.get(pk=pk)
+#    livro.delete()
+#    return render(request, '../../../', {'pk': pk}) 
  
