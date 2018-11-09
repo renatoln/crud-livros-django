@@ -25,7 +25,8 @@ SECRET_KEY = '8rjeo2xw-)6!qb7xj+=&c26(-$)#ge5k1#5-a5@7&btydnhgg3'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', '127.0.0.1',
+                'stadsifba.pythonanywhere.com',]
 
 
 # Application definition
