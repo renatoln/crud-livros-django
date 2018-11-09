@@ -1,0 +1,192 @@
+{
+	"info": {
+		"_postman_id": "4fa3ef59-e762-4fef-984e-eac2206f69f8",
+		"name": "crud-livros-basico",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "cadastrarLivro",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "codigo",
+							"value": "20181109",
+							"type": "text"
+						},
+						{
+							"key": "ISBN",
+							"value": "1111111",
+							"type": "text"
+						},
+						{
+							"key": "titulo",
+							"value": "Crud Básico ful stack",
+							"type": "text"
+						},
+						{
+							"key": "autor",
+							"value": "Renato novais",
+							"type": "text"
+						},
+						{
+							"key": "ano",
+							"value": "2018",
+							"type": "text"
+						},
+						{
+							"key": "editora",
+							"value": "IFBA",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api_rest/cadastrarLivro/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api_rest",
+						"cadastrarLivro",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "atualizarLivro",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "codigo",
+							"value": "20181109",
+							"type": "text"
+						},
+						{
+							"key": "ISBN",
+							"value": "2222222",
+							"type": "text"
+						},
+						{
+							"key": "titulo",
+							"value": "Crud Básico Full Stack",
+							"type": "text"
+						},
+						{
+							"key": "autor",
+							"value": "Renato Lima Novais",
+							"type": "text"
+						},
+						{
+							"key": "ano",
+							"value": "2019",
+							"type": "text"
+						},
+						{
+							"key": "editora",
+							"value": "IFBA tech",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api_rest/atualizarLivro/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api_rest",
+						"atualizarLivro",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "excluirLivro",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "codigo",
+							"value": "20181109",
+							"type": "text"
+						},
+						{
+							"key": "ISBN",
+							"value": "2222222",
+							"type": "text"
+						},
+						{
+							"key": "titulo",
+							"value": "Crud Básico Full Stack",
+							"type": "text"
+						},
+						{
+							"key": "autor",
+							"value": "Renato Lima Novais",
+							"type": "text"
+						},
+						{
+							"key": "ano",
+							"value": "2019",
+							"type": "text"
+						},
+						{
+							"key": "editora",
+							"value": "IFBA tech",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api_rest/atualizarLivro/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api_rest",
+						"atualizarLivro",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listarLivros",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		}
+	]
+}
